@@ -28,7 +28,8 @@ int main()
         easyfind(numbers, 99);
         std::cout << "Test 2 Failed: Should have thrown an exception!" << std::endl;
     } 
-    catch (const std::exception& e) {
+    catch (const std::exception& e)
+	{
         std::cout << "Success! Caught expected error: " << RED << e.what() << WHITE << std::endl;
     }
     
