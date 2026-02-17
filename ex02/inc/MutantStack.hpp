@@ -20,14 +20,15 @@
 #include <vector>
 #include <stack>
 #include <deque>
+#include <list>
 
 
 template <typename T>
-class MutanStack : public std::stack<T>
+class MutantStack : public std::stack<T>
 {
 	public:
-		MutanStack() : std::stack<T>();
-		MutanStack(const MutanStack<T> &other) : std::stack<T>(other);
+		MutantStack();
+		MutantStack(const MutantStack<T> &other);
 		MutantStack<T>& operator=(const MutantStack<T>& other);
 		~MutantStack();
 

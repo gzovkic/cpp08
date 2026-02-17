@@ -1,4 +1,4 @@
-NAME = span
+NAME = mutantstack
 CPP = c++
 RM = rm -rf
 
@@ -17,7 +17,7 @@ vpath %.cpp $(SRC_DIRS)
 ###############                  SOURCE FILES                     ##############
 ################################################################################
 
-SRCS := main.cpp Span.cpp
+SRCS := main.cpp 
 OBJS := $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
 
 ################################################################################
