@@ -66,11 +66,3 @@ void	Span::addNumber(int number)
 		throw FullSpanException();
 	this->_numbers.push_back(number);
 }
-
-template <typename T>
-void Span::addRange(T begin, T end)
-{
-	if (this->_numbers.size() + std::distance(begin, end) > this->_n)
-		throw FullSpanException();
-	this->_numbers.insert(this->_numbers.end(), begin, end);
-}
