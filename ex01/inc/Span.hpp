@@ -31,6 +31,9 @@ class Span
 		unsigned int shortestSpan() const;
 		unsigned int longestSpan() const;
 
+		template <typename T>
+		void addRange(T begin, T end);
+
 		class FullSpanException : public std::exception
 		{
             virtual const char* what() const throw()
