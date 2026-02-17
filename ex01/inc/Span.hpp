@@ -22,10 +22,9 @@
 class Span
 {
     public:
-        Span();
         ~Span();
         Span(const Span &other);
-        Span operator=(const Span &other);
+        Span &operator=(const Span &other);
     
 		Span(unsigned int n);
 		void addNumber(int number);
@@ -48,4 +47,6 @@ class Span
         };
     private:
 		unsigned int _n;
-}
+		std::vector<int> _numbers;
+		Span();
+};
